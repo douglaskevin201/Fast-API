@@ -1,7 +1,7 @@
-from fastapi import FastApi
+from fastapi import FastAPI
 
-app = FastApi()
+app = FastAPI()
 
-
+print("Hello Word")
 
 # Para executar o nosso codigo roda isso no terminal > uvicorn main:app --reload
