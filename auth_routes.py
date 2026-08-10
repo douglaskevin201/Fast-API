@@ -12,6 +12,7 @@ async def home():
     return {"Mensagem": "Você acessou a rota padrão de autenticação", "autenticação": False}
 
 
+@auth_router.post("/criar_conta")
 async def criar_conta(email: str, senha: str, nome: str):
     Session = sessionmaker(bind=db)
     session = Session()
